@@ -1614,7 +1614,7 @@ app.get('/profile', (req, res) => {
 
             // Query to fetch profile information based on id_number
             const profileLookupSql = `
-                SELECT profile, name, department, designation, dob, blood_group, gender
+                SELECT id_number,profile, name, department, designation, dob, blood_group, gender
                 FROM tblstaff
                 WHERE id_number = ?
             `;
